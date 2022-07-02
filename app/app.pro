@@ -19,6 +19,7 @@ HEADERS += \
     cardwidget.h \
     crypton.h \
     mainwindow.h \
+    password.h \
     promowindow.h
 
 FORMS += \
