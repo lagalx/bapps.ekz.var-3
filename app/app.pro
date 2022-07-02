@@ -10,12 +10,14 @@ CONFIG += c++17
 
 SOURCES += \
     cardwidget.cpp \
+    crypton.cpp \
     main.cpp \
     mainwindow.cpp \
     promowindow.cpp
 
 HEADERS += \
     cardwidget.h \
+    crypton.h \
     mainwindow.h \
     promowindow.h
 
@@ -28,3 +30,5 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+include($$PWD/../Qt-Secret/src/Qt-Secret.pri)
